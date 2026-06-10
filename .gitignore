@@ -1,5 +1,9 @@
 .env
-*.json
 meta_api.log
 token_info.json
 __pycache__/
+# Excluir JSONs de datos scrapeados (privados)
+prospeccion_data.json
+# Pero permitir config y datos del proyecto Next.js
+!viper-next/**/*.json
+!viper-next/public/*.json

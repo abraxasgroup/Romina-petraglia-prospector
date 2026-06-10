@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #0C0C14; color: #F0F0FA; font-family: 'Inter', sans-serif; }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #13131E; }
+  ::-webkit-scrollbar-thumb { background: #3A3A55; border-radius: 3px; }
+}
+
+@layer components {
+  .badge {
+    @apply text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap;
+  }
+}
